@@ -10,4 +10,4 @@ RUN printf "root:password" | chpasswd
 WORKDIR /home/satoshi/
 # We set env, as this gets extracted by Webvm. This is optional.
 ENV HOME="/home/satoshi" TERM="xterm" USER="satoshi" SHELL="/bin/sh" SU="doas" EDITOR="vim" LANG="en_US.UTF-8" LC_ALL="C"
-CMD [ "/bin/sh" ]
+CMD [ "/sbin/init" ]
