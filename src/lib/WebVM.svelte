@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import Nav from 'labs/packages/global-navbar/src/Nav.svelte';
 	import SideBar from '$lib/SideBar.svelte';
 	import '$lib/global.css';
 	import '@xterm/xterm/css/xterm.css'
