@@ -324,7 +324,7 @@
 </script>
 
 <main class="relative w-full h-full">
-	<div class="absolute">
+	<div class="absolute inset-0">
 		<SideBar on:connect={handleConnect} on:reset={handleReset}>
 			<slot></slot>
 		</SideBar>
