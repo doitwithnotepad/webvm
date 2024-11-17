@@ -37,7 +37,7 @@ jobs:
       runs-on: ubuntu-latest
   
       env:
-        GH_TOKEN: ${{ github.token }} # As required by the GitHub-CLI  
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # As required by the GitHub-CLI  
 
       permissions:
         actions: 'write' # Required in order to terminate the workflow run.

@@ -16,12 +16,11 @@ export default defineConfig({
 		sveltekit(),
 		viteStaticCopy({
 			targets: [
-				{ src: 'tower.ico', dest: '' },
+				{ src: 'favicon.ico', dest: '' },
 				{ src: 'scrollbar.css', dest: '' },
 				{ src: 'serviceWorker.js', dest: '' },
 				{ src: 'login.html', dest: '' },
-				{ src: 'assets/', dest: '' },
-				{ src: 'documents/', dest: '' }
+				{ src: 'assets/', dest: '' }
 			]
 		})
 	]
