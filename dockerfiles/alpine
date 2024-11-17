@@ -1,6 +1,6 @@
 FROM --platform=i386 i386/alpine:3.20.3
 RUN apk update && apk add --upgrade apk-tools && apk upgrade --available
-RUN apk add --no-cache vim && && rm -rf /var/cache/apk/*
+RUN apk add --no-cache vim && rm -rf /var/cache/apk/*
 RUN adduser -D satoshi
 RUN adduser satoshi wheel
 RUN printf "permit nopass keepenv :wheel as root" >> /etc/doas.conf
